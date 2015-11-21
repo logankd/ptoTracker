@@ -1,4 +1,4 @@
-import {autoinject} from 'aurelia-framework';
+import {inject} from 'aurelia-framework';
 import {UserQueryDataApi} from 'data/userQueryDataApi';
 /**
  * PTO dashboard. 
@@ -6,10 +6,13 @@ import {UserQueryDataApi} from 'data/userQueryDataApi';
  @inject(UserQueryDataApi)
 export class MyPto {
 	constructor(userQueryDataApi){
-		debugger;
 		this.userQueryDataApi = userQueryDataApi;
 		this.acrualRate = 0;
+		this.totalAvailable = 0;
 		this.ptoForCurrentMonth = [];
+		
+		// should init go here?
+		return this.init(1);
 	}
 	
 	init(userId){
@@ -20,7 +23,10 @@ export class MyPto {
 			// figure out continuation
 			return this.userQueryDataApi.getUsersPtoForDashboard(userId)
 				.then(pto => {
-					
+					debugger;
+					this.totalAvailable = pto.totalAvailable;
+					const allPto = pto.pto;
+					this.ptoForCurrentMonth = allPto;
 				});
 		});
 	}
