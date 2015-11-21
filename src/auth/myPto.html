@@ -1,10 +1,15 @@
 <template>
 	<h1>My PTO Dashboard</h1>
 	<label>Accrual Rate Per Month in Hours</label>
-	<span text.bind="acrualRate"></span>
-	
+	<span>${acrualRate}</span>
+
 	<br />
 	<label>Total PTO available</label>
-	<span text.bind=""
-	
+	<span>${totalAvailable}</span>
+	<ul>
+		<li repeat.for="pto of ptoForCurrentMonth">
+				Date: ${pto.start} - ${pto.end}
+				Approved By: ${approvedBy}
+		</li>
+	</ul>
 </template>

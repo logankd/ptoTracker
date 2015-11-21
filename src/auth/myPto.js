@@ -12,7 +12,7 @@ export class MyPto {
 		this.ptoForCurrentMonth = [];
 		
 		// should init go here?
-		return this.init(1);
+		this.init(1);
 	}
 	
 	init(userId){
@@ -23,7 +23,6 @@ export class MyPto {
 			// figure out continuation
 			return this.userQueryDataApi.getUsersPtoForDashboard(userId)
 				.then(pto => {
-					debugger;
 					this.totalAvailable = pto.totalAvailable;
 					const allPto = pto.pto;
 					this.ptoForCurrentMonth = allPto;
