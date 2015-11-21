@@ -1,7 +1,7 @@
 {
   "name": "pto-tracker",
   "version": "0.0.1",
-  "description": "A PTO tracker app with Aurelia.",
+  "description": "A PTO tracker app made with Aurelia.",
   "keywords": [
     "aurelia",
     "navigation",
@@ -85,6 +85,7 @@
       "core-js": "npm:core-js@^1.2.6",
       "fetch": "github:github/fetch@^0.10.1",
       "font-awesome": "npm:font-awesome@^4.3.0",
+      "moment": "npm:moment@^2.10.6",
       "text": "github:systemjs/plugin-text@^0.0.2"
     },
     "devDependencies": {
