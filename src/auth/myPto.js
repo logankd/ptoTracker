@@ -1,9 +1,11 @@
 import {inject} from 'aurelia-framework';
 import {UserQueryDataApi} from 'data/userQueryDataApi';
+import moment from 'moment';
+
 /**
  * PTO dashboard. 
  **/
- @inject(UserQueryDataApi)
+ @inject(UserQueryDataApi, moment)
 export class MyPto {
 	constructor(userQueryDataApi){
 		this.userQueryDataApi = userQueryDataApi;
@@ -24,7 +26,11 @@ export class MyPto {
 			return this.userQueryDataApi.getUsersPtoForDashboard(userId)
 				.then(pto => {
 					this.totalAvailable = pto.totalAvailable;
-					const allPto = pto.pto;
+					const allPto = pto.pto.map(p => {
+						p.start = moment(p.start).format('lll');
+						p.end = moment(p.end).format('lll');
+						return p;
+					});
 					this.ptoForCurrentMonth = allPto;
 				});
 		});
