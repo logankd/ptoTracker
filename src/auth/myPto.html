@@ -8,8 +8,7 @@
 	<span>${totalAvailable}</span>
 	<ul>
 		<li repeat.for="pto of ptoForCurrentMonth">
-				Date: ${pto.start} - ${pto.end}<br />
-				Approved By: ${pto.approvedBy}
+			<compose view-model="./ptoRecordComponent" model.bind="pto"></compose>
 		</li>
 	</ul>
 </template>
