@@ -1,6 +1,6 @@
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
-import {UserInfo} from 'models/userInfo';
+import {User} from 'models/user';
 import {Pto} from 'models/pto';
 
 import moment from 'moment';
@@ -21,8 +21,8 @@ export class UserQueryDataApi {
         //     });
     }
     
-    getUserInfo(userId) {
-       const user = new UserInfo(userId, 'Kevin', 10, 1);
+    getUser(userId) {
+       const user = new User(userId, 'Kevin', 10, 1);
        return Promise.resolve(user);
     }
     
