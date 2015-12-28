@@ -9,11 +9,11 @@ using Microsoft.AspNet.Mvc;
 using Microsoft.AspNet.Mvc.Rendering;
 using Microsoft.Data.Entity;
 using Microsoft.Extensions.Logging;
-using ptoTracker.Models;
-using ptoTracker.Services;
-using ptoTracker.ViewModels.Account;
+using PtoTracker.Models;
+using PtoTracker.ViewModels.Account;
+using PtoTracker.WebServices;
 
-namespace ptoTracker.Controllers
+namespace PtoTracker.Controllers
 {
     [Authorize]
     public class AccountController : Controller

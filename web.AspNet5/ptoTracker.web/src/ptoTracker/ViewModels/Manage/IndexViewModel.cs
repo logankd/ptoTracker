@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 
-namespace ptoTracker.ViewModels.Manage
+namespace PtoTracker.ViewModels.Manage
 {
     public class IndexViewModel
     {

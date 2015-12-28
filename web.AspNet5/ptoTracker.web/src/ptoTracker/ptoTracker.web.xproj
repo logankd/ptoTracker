@@ -7,7 +7,7 @@
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>94f5eaa8-c207-4a29-a2ba-a7188fbca38f</ProjectGuid>
-    <RootNamespace>ptoTracker</RootNamespace>
+    <RootNamespace>PtoTracker</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>
   </PropertyGroup>
@@ -18,6 +18,10 @@
     <DnxInvisibleContent Include="bower.json" />
     <DnxInvisibleContent Include=".bowerrc" />
     <DnxInvisibleContent Include="package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ptoTracker.Models\ptoTracker.Models.csproj" />
+    <ProjectReference Include="..\PtoTracker.Services\PtoTracker.Services.csproj" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>

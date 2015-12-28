@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ptoTracker.ViewModels.Account
+namespace PtoTracker.ViewModels.Account
 {
     public class VerifyCodeViewModel
     {

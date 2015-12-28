@@ -7,11 +7,11 @@ using Microsoft.AspNet.Authorization;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Mvc;
 using Microsoft.Extensions.Logging;
-using ptoTracker.Models;
-using ptoTracker.Services;
-using ptoTracker.ViewModels.Manage;
+using PtoTracker.Models;
+using PtoTracker.ViewModels.Manage;
+using PtoTracker.WebServices;
 
-namespace ptoTracker.Controllers
+namespace PtoTracker.Controllers
 {
     [Authorize]
     public class ManageController : Controller

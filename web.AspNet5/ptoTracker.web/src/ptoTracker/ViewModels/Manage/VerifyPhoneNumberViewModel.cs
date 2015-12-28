@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ptoTracker.ViewModels.Manage
+namespace PtoTracker.ViewModels.Manage
 {
     public class VerifyPhoneNumberViewModel
     {

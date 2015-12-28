@@ -6,9 +6,9 @@ using Microsoft.Data.Entity;
 using Microsoft.Data.Entity.Infrastructure;
 using Microsoft.Data.Entity.Metadata;
 using Microsoft.Data.Entity.Migrations;
-using ptoTracker.Models;
+using PtoTracker.Models;
 
-namespace ptoTracker.Migrations
+namespace PtoTracker.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
@@ -99,7 +99,7 @@ namespace ptoTracker.Migrations
                     b.HasAnnotation("Relational:TableName", "AspNetUserRoles");
                 });
 
-            modelBuilder.Entity("ptoTracker.Models.ApplicationUser", b =>
+            modelBuilder.Entity("PtoTracker.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id");
 
@@ -156,14 +156,14 @@ namespace ptoTracker.Migrations
 
             modelBuilder.Entity("Microsoft.AspNet.Identity.EntityFramework.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("ptoTracker.Models.ApplicationUser")
+                    b.HasOne("PtoTracker.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNet.Identity.EntityFramework.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("ptoTracker.Models.ApplicationUser")
+                    b.HasOne("PtoTracker.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId");
                 });
@@ -174,7 +174,7 @@ namespace ptoTracker.Migrations
                         .WithMany()
                         .HasForeignKey("RoleId");
 
-                    b.HasOne("ptoTracker.Models.ApplicationUser")
+                    b.HasOne("PtoTracker.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId");
                 });

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Data.Entity.Metadata;
 using Microsoft.Data.Entity.Migrations;
 
-namespace ptoTracker.Migrations
+namespace PtoTracker.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

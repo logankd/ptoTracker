@@ -19,8 +19,8 @@ export class MyPto {
 	
 	init(userId){
 		// get current user's acrual rate and pto for the current month
-		return this.userQueryDataApi.getUserInfo(userId).then(userInfo =>{
-			this.acrualRate = userInfo.acrualHoursPerMonth;
+		return this.userQueryDataApi.getUser(userId).then(user =>{
+			this.acrualRate = user.acrualHoursPerMonth;
 			
 			// figure out continuation
 			return this.userQueryDataApi.getUsersPtoForDashboard(userId)

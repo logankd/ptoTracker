@@ -9,10 +9,10 @@ using Microsoft.Data.Entity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using ptoTracker.Models;
-using ptoTracker.Services;
+using PtoTracker.Models;
+using PtoTracker.WebServices;
 
-namespace ptoTracker
+namespace PtoTracker
 {
     public class Startup
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
 
-namespace ptoTracker.Controllers
+namespace PtoTracker.Controllers
 {
     public class HomeController : Controller
     {

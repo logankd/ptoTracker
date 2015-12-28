@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc.Rendering;
 
-namespace ptoTracker.ViewModels.Account
+namespace PtoTracker.ViewModels.Account
 {
     public class SendCodeViewModel
     {
