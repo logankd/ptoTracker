@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Identity.EntityFramework;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
-using PtoTracker.Models;
 
 namespace PtoTracker.Models
 {
@@ -17,6 +12,7 @@ namespace PtoTracker.Models
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
     }
 }

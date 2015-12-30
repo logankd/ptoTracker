@@ -10,6 +10,6 @@ namespace PtoTracker.Models
 	    public int UserId { get; set; }
 	    public DateTime Start { get; set; }
 	    public DateTime End { get; set; }
-	    public User ApprovedBy { get; set; }	
+	    public ApplicationUser ApprovedBy { get; set; }	
     }
 }

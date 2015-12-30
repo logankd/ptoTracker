@@ -19,9 +19,5 @@
     <DnxInvisibleContent Include=".bowerrc" />
     <DnxInvisibleContent Include="package.json" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ptoTracker.Models\ptoTracker.Models.csproj" />
-    <ProjectReference Include="..\PtoTracker.Services\PtoTracker.Services.csproj" />
-  </ItemGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>

@@ -12,12 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PtoTracker.web", "src\ptoTracker\PtoTracker.web.xproj", "{94F5EAA8-C207-4A29-A2BA-A7188FBCA38F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PtoTracker.Services", "src\PtoTracker.Services\PtoTracker.Services.csproj", "{96666174-1158-4908-B345-9AB24A1FED96}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PtoTracker.Data", "src\PtoTracker.Data\PtoTracker.Data.csproj", "{738EDA6D-5DC0-484E-9376-3EEDA040BE75}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PtoTracker.Models", "src\PtoTracker.Models\PtoTracker.Models.csproj", "{673550B5-DBBA-4DD8-8C05-530A81B23B97}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,27 +22,12 @@ Global
 		{94F5EAA8-C207-4A29-A2BA-A7188FBCA38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94F5EAA8-C207-4A29-A2BA-A7188FBCA38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94F5EAA8-C207-4A29-A2BA-A7188FBCA38F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96666174-1158-4908-B345-9AB24A1FED96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96666174-1158-4908-B345-9AB24A1FED96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96666174-1158-4908-B345-9AB24A1FED96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96666174-1158-4908-B345-9AB24A1FED96}.Release|Any CPU.Build.0 = Release|Any CPU
-		{738EDA6D-5DC0-484E-9376-3EEDA040BE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{738EDA6D-5DC0-484E-9376-3EEDA040BE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{738EDA6D-5DC0-484E-9376-3EEDA040BE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{738EDA6D-5DC0-484E-9376-3EEDA040BE75}.Release|Any CPU.Build.0 = Release|Any CPU
-		{673550B5-DBBA-4DD8-8C05-530A81B23B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{673550B5-DBBA-4DD8-8C05-530A81B23B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{673550B5-DBBA-4DD8-8C05-530A81B23B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{673550B5-DBBA-4DD8-8C05-530A81B23B97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{94F5EAA8-C207-4A29-A2BA-A7188FBCA38F} = {79462E5E-68E1-4DEE-97B9-3899331FE9F7}
-		{96666174-1158-4908-B345-9AB24A1FED96} = {79462E5E-68E1-4DEE-97B9-3899331FE9F7}
-		{738EDA6D-5DC0-484E-9376-3EEDA040BE75} = {79462E5E-68E1-4DEE-97B9-3899331FE9F7}
-		{673550B5-DBBA-4DD8-8C05-530A81B23B97} = {79462E5E-68E1-4DEE-97B9-3899331FE9F7}
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 7c1fd237-e886-444b-9d51-34d0b63d7204

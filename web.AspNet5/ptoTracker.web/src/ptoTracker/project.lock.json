@@ -3,20 +3,6 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.6": {
-      "EntityFramework/6.1.3": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations"
-        ],
-        "compile": {
-          "lib/net45/EntityFramework.dll": {},
-          "lib/net45/EntityFramework.SqlServer.dll": {}
-        },
-        "runtime": {
-          "lib/net45/EntityFramework.dll": {},
-          "lib/net45/EntityFramework.SqlServer.dll": {}
-        }
-      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -1851,27 +1837,6 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "PtoTracker.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
-        "dependencies": {
-          "EntityFramework": "6.1.3",
-          "PtoTracker.Models": "1.0.0"
-        }
-      },
-      "PtoTracker.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.5.2"
-      },
-      "PtoTracker.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
-        "dependencies": {
-          "EntityFramework": "6.1.3",
-          "PtoTracker.Data": "1.0.0",
-          "PtoTracker.Models": "1.0.0"
-        }
-      },
       "Remotion.Linq/2.0.1": {
         "type": "package",
         "compile": {
@@ -2100,20 +2065,6 @@
       }
     },
     "DNX,Version=v4.6/win7-x86": {
-      "EntityFramework/6.1.3": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations"
-        ],
-        "compile": {
-          "lib/net45/EntityFramework.dll": {},
-          "lib/net45/EntityFramework.SqlServer.dll": {}
-        },
-        "runtime": {
-          "lib/net45/EntityFramework.dll": {},
-          "lib/net45/EntityFramework.SqlServer.dll": {}
-        }
-      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -3951,27 +3902,6 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "PtoTracker.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
-        "dependencies": {
-          "EntityFramework": "6.1.3",
-          "PtoTracker.Models": "1.0.0"
-        }
-      },
-      "PtoTracker.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.5.2"
-      },
-      "PtoTracker.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
-        "dependencies": {
-          "EntityFramework": "6.1.3",
-          "PtoTracker.Data": "1.0.0",
-          "PtoTracker.Models": "1.0.0"
-        }
-      },
       "Remotion.Linq/2.0.1": {
         "type": "package",
         "compile": {
@@ -4200,20 +4130,6 @@
       }
     },
     "DNX,Version=v4.6/win7-x64": {
-      "EntityFramework/6.1.3": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations"
-        ],
-        "compile": {
-          "lib/net45/EntityFramework.dll": {},
-          "lib/net45/EntityFramework.SqlServer.dll": {}
-        },
-        "runtime": {
-          "lib/net45/EntityFramework.dll": {},
-          "lib/net45/EntityFramework.SqlServer.dll": {}
-        }
-      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -6051,27 +5967,6 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "PtoTracker.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
-        "dependencies": {
-          "EntityFramework": "6.1.3",
-          "PtoTracker.Models": "1.0.0"
-        }
-      },
-      "PtoTracker.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.5.2"
-      },
-      "PtoTracker.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
-        "dependencies": {
-          "EntityFramework": "6.1.3",
-          "PtoTracker.Data": "1.0.0",
-          "PtoTracker.Models": "1.0.0"
-        }
-      },
       "Remotion.Linq/2.0.1": {
         "type": "package",
         "compile": {
@@ -6301,46 +6196,6 @@
     }
   },
   "libraries": {
-    "PtoTracker.Data/1.0.0": {
-      "type": "project",
-      "path": "../../wrap/PtoTracker.Data/project.json"
-    },
-    "PtoTracker.Models/1.0.0": {
-      "type": "project",
-      "path": "../../wrap/PtoTracker.Models/project.json"
-    },
-    "PtoTracker.Services/1.0.0": {
-      "type": "project",
-      "path": "../../wrap/PtoTracker.Services/project.json"
-    },
-    "EntityFramework/6.1.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "2xzFHAF3VVdmTR3//MygtQpwfbDjeaq+nQwCcokLzen7MKHOojPaxNPQPa4diHY1QtcR7zlHAJHNRqPB7W2Syw==",
-      "files": [
-        "content/App.config.transform",
-        "content/Web.config.transform",
-        "EntityFramework.6.1.3.nupkg",
-        "EntityFramework.6.1.3.nupkg.sha512",
-        "EntityFramework.nuspec",
-        "lib/net40/EntityFramework.dll",
-        "lib/net40/EntityFramework.SqlServer.dll",
-        "lib/net40/EntityFramework.SqlServer.xml",
-        "lib/net40/EntityFramework.xml",
-        "lib/net45/EntityFramework.dll",
-        "lib/net45/EntityFramework.SqlServer.dll",
-        "lib/net45/EntityFramework.SqlServer.xml",
-        "lib/net45/EntityFramework.xml",
-        "tools/about_EntityFramework.help.txt",
-        "tools/EntityFramework.PowerShell.dll",
-        "tools/EntityFramework.PowerShell.Utility.dll",
-        "tools/EntityFramework.psd1",
-        "tools/EntityFramework.psm1",
-        "tools/init.ps1",
-        "tools/install.ps1",
-        "tools/migrate.exe"
-      ]
-    },
     "EntityFramework.Commands/7.0.0-rc1-final": {
       "type": "package",
       "serviceable": true,
@@ -8605,9 +8460,6 @@
       "Microsoft.Extensions.Logging.Debug >= 1.0.0-rc1-final",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final"
     ],
-    "DNX,Version=v4.6": [
-      "PtoTracker.Models >= 1.0.0-*",
-      "PtoTracker.Services >= 1.0.0-*"
-    ]
+    "DNX,Version=v4.6": []
   }
 }
