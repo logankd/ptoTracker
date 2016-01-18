@@ -1,7 +1,10 @@
-#Pto Tracker using Aurelia 
-and Azure Mobile Services?
+#Pto Tracker using Aurelia and ASP .Net 5
+
+I'm learning how to use Aurelia and ASP .Net 5 in a project while creating an application to simplify tracking PTO. My pay stub tells me how many hours are left, but I'd like to see it whenever and I want and simplify the administration side of it as well for my company.
 
 Started from the https://github.com/aurelia/skeleton-navigation project.
+
+
 
 
 # aurelia-skeleton-navigation - copied readme
